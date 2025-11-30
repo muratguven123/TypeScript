@@ -5,7 +5,7 @@ type Personel={
 }
 
 type worker={
-    ucret:number,
+    ucret?:number,
     calismaSaat:number,
     yas:number,
     departman?:string

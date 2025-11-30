@@ -12,7 +12,7 @@ const objem={
 const xs = objem
 const data :{
     id:number|string,
-    levels:Levels,
+    levels?:Levels,
     name?:String,//burada name alanı opsiyonel yaptık yani backendten veri gelmeyebilir
     status:"x"|"y"
 
@@ -22,3 +22,7 @@ const data :{
     name:"deneme",
     status:"x"
 }
+// ? bu değişken opsiyonel olabilir
+// | union tipi belirtir
+// & ve anlamına gelir
+// ! null ve undefined atamasını engeller
