@@ -44,6 +44,7 @@ class Main {
         const channel1 = new NewsChannel("Channel 1", newsAgency);
         const channel2 = new NewsChannel("Channel 2", newsAgency);
         newsAgency.setNews("Breaking News: Observer Pattern Implemented!");
+        const channel3 = new NewsChannel("Channel 3", newsAgency);
 }
 }
 // Çalıştırmak için main'i çağırıyoruz
