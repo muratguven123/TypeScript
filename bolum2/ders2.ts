@@ -1,14 +1,14 @@
-function merhaba(p:String){
+function merhabaDers2(p:String){
     console.log(p)
 }
 const sayhelloTUser=(user:Number)=>{
     console.log("Hello"+user);
 }
-const logArray=(userlist:Array<Number>)=>{}
-const mixTypeFun=(p1:string|FType)=>{}
+const logArray=(_userlist:Array<Number>)=>{}
+const mixTypeFun=(_p1:string|FType)=>{}
 type FType ={ad:string}
 
-merhaba("11")
+merhabaDers2("11")
 sayhelloTUser(1)
 
 //Eğer bir parametre de herhangi bir değer atfettmediğin zaman parametre değeri any olarak kabul edilecektir

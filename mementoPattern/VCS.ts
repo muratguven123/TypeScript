@@ -42,7 +42,9 @@ class VersionControl {
         if(currentMemento){
             this.redoStack.push(currentMemento);
             const previousMemento = this.undoStack[this.undoStack.length -1];
-            Repository.restore(previousMemento);
+            if(previousMemento) {
+                Repository.restore(previousMemento);
+            }
         }
     }
     redo(Repository: Repository): void {

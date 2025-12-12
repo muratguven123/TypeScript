@@ -43,7 +43,9 @@ class TextEditorCaretaker {
         if(currentmemento){
             this.redoStack.push(currentmemento);
             const previousMemento = this.undoStack[this.undoStack.length -1];
-            editor.restore(previousMemento);
+            if(previousMemento) {
+                editor.restore(previousMemento);
+            }
         }
 
     

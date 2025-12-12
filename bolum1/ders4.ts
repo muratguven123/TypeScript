@@ -18,4 +18,4 @@ var matris:number[][]=[
     [4,5,6],
     [7,8,9]
 ]
-console.log(matris[1][2]) //6
+console.log(matris[1]?.[2]) //6

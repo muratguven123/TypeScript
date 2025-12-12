@@ -1,4 +1,4 @@
-function greeting(age:number,name?:string){
+function greeting(_age:number,name?:string){
     if(name){
             name?.toLocaleLowerCase()
             console.log("Hello"+name)

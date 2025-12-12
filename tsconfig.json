@@ -1,12 +1,49 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist"
+    /* Temel Seçenekler */
+    "target": "ES2020",                          // Hedef JavaScript sürümü (ES5, ES6, ES2020, ESNext vb.)
+    "module": "commonjs",                        // Modül sistemi (commonjs, ESNext, AMD, UMD vb.)
+    "lib": ["ES2020"],                           // Dahil edilecek kütüphaneler
+    "outDir": "./dist",                          // Derlenmiş dosyaların çıktı klasörü
+    "rootDir": "./",                             // Kaynak dosyaların kök dizini
+
+    /* Strict Type-Checking Seçenekleri */
+    "strict": true,                              // Tüm katı kontrolleri etkinleştirir
+    "noImplicitAny": true,                       // Örtük any tipine izin vermez
+    "strictNullChecks": true,                    // null ve undefined kontrolü
+    "strictFunctionTypes": true,                 // Fonksiyon parametre tipi kontrolü
+    "strictBindCallApply": true,                 // bind, call, apply kontrolü
+    "strictPropertyInitialization": true,        // Sınıf özellik başlatma kontrolü
+    "noImplicitThis": true,                      // Örtük this tipine izin vermez
+    "alwaysStrict": true,                        // Her dosyaya "use strict" ekler
+
+    /* Ek Kontroller */
+    "noUnusedLocals": true,                      // Kullanılmayan yerel değişkenleri hata olarak işaretle
+    "noUnusedParameters": true,                  // Kullanılmayan parametreleri hata olarak işaretle
+    "noImplicitReturns": true,                   // Eksik return ifadelerini hata olarak işaretle
+    "noFallthroughCasesInSwitch": true,          // Switch case'lerde fallthrough'u önle
+    "noUncheckedIndexedAccess": true,            // Index erişiminde undefined kontrolü
+
+    /* Modül Çözümleme */
+    "moduleResolution": "node",                  // Modül çözümleme stratejisi
+    "esModuleInterop": true,                     // ES modül uyumluluğu
+    "allowSyntheticDefaultImports": true,        // Default import uyumluluğu
+    "resolveJsonModule": true,                   // JSON dosyalarını import etmeye izin ver
+
+    /* Source Map & Deklarasyon */
+    "sourceMap": true,                           // Source map dosyaları oluştur
+    "declaration": true,                         // .d.ts dosyaları oluştur
+    "declarationMap": true,                      // Deklarasyon source map'leri
+
+    /* Proje Seçenekleri */
+    "incremental": true,                         // Artımlı derleme
+    "skipLibCheck": true,                        // Kütüphane tip kontrolünü atla
+    "forceConsistentCasingInFileNames": true,    // Dosya adı büyük/küçük harf tutarlılığı
+
+    /* Gelişmiş Seçenekler */
+    "removeComments": false,                     // Yorumları kaldırma
+    "noEmitOnError": true,                       // Hata varsa dosya üretme
+    "preserveConstEnums": true                   // Const enum'ları koru
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]

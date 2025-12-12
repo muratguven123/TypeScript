@@ -19,7 +19,7 @@ class Mp3Calar {
 
 }
 class OynatState implements state {
-    public playTusunaBas(context: Mp3Calar): void {
+    public playTusunaBas(_context: Mp3Calar): void {
         console.log("Zaten müzik çalıyor.");
     }
     public durTusunaBas(context: Mp3Calar): void {
@@ -32,7 +32,7 @@ class DurState implements state {
         console.log("Müzik çalıyor.");
         context.setState(new OynatState());
     }
-    public durTusunaBas(context: Mp3Calar): void {
+    public durTusunaBas(_context: Mp3Calar): void {
         console.log("Müzik zaten durdurulmuş.");
     }
 }

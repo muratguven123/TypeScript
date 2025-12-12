@@ -1,4 +1,4 @@
-function merhaba(){
+function merhabaDers1(){
     console.log("Merhaba")
 }
 const sayhello=()=>{
